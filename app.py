@@ -9,7 +9,7 @@ logging.basicConfig(filename="scrapper.log" , level=logging.INFO)
 app = Flask(__name__)
 
 @app.route("/", methods = ['GET'])
-def homepage():
+def homepage():  
     return render_template("index.html")
 
 @app.route("/review" , methods = ['POST' , 'GET'])
